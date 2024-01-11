@@ -9085,4 +9085,8 @@ header.wide-header .main-menu ul > li > ul ul, header .header-3 .main-menu ul > 
 	background-color: #e6e6e6;
 }
 
+.timeline__heading{
+  padding:0 0 80px 53px;
+
+}
 /*# sourceMappingURL=style.css.map */
