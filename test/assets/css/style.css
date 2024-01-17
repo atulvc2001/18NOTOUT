@@ -4375,7 +4375,7 @@ header.wide-header .main-menu ul > li > ul ul, header .header-3 .main-menu ul > 
 }
 
 .brands-carousel-section.bg-overlay:before {
-  background: #efc94c;
+  background: #f0f0f0;
   opacity: .90;
 }
 
@@ -9089,4 +9089,14 @@ header.wide-header .main-menu ul > li > ul ul, header .header-3 .main-menu ul > 
   padding-bottom: 2%;
 
 }
+
+/* Under Construction CSS */
+
+.under__construction {
+  margin:300px;
+  display:flex;
+  justify-content: center;
+}
+
+
 /*# sourceMappingURL=style.css.map */
