@@ -3936,10 +3936,11 @@ header.wide-header .main-menu ul > li > ul ul, header .header-3 .main-menu ul > 
 
 .about-us-section .about-shots .our-experience {
   width: 261px;
-  height: 216px;
+  height: 261px;
+  border-radius: 1000px;
   position: absolute;
-  bottom: 100px;
-  right: -100px;
+  bottom: -106px;
+  right: -46px;
   background-color: #00baa3;
   text-align: center;
   font-size: 18px;
@@ -3965,6 +3966,7 @@ header.wide-header .main-menu ul > li > ul ul, header .header-3 .main-menu ul > 
     bottom: -30px;
   }
 }
+
 
 .about-us-section .about-shots .our-experience h1 {
   margin-top: 50px;
@@ -9004,6 +9006,17 @@ header.wide-header .main-menu ul > li > ul ul, header .header-3 .main-menu ul > 
 @media (max-width: 991px) {
   .recent-post-wid .recent-post-list .single-recent-post .post-data h5 {
     font-size: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+ .our-experience {
+    right: 20px;
+	bottom: 40px;
+	width: 230px;
+    height: 230px;
+	position: absolute;
+	z-index: 100;
   }
 }
 
