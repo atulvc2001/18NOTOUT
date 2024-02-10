@@ -3800,8 +3800,11 @@ header.wide-header .main-menu ul > li > ul ul, header .header-3 .main-menu ul > 
 }
 
 .theme-bg {
-  background-color: #d55343;
+  background-color: #ffffff;
 }
+/* .theme-bg {
+  background-color: #d55343;
+} */
 
 .section-title > span {
   font-size: 16px;
@@ -5621,7 +5624,7 @@ header.wide-header .main-menu ul > li > ul ul, header .header-3 .main-menu ul > 
 }
 
 .cta-subscribe-form form .single-input input {
-  background-color: #272c2e;
+  background-color: lightgrey;
   height: 60px;
   border: 0px;
   width: 100%;
@@ -5931,7 +5934,7 @@ header.wide-header .main-menu ul > li > ul ul, header .header-3 .main-menu ul > 
 
 .event-section .single-event-item .event-details .event-date span {
   display: block;
-  font-size: 40px;
+  font-size: 26px;
   font-weight: 700;
 }
 
@@ -7348,6 +7351,7 @@ header.wide-header .main-menu ul > li > ul ul, header .header-3 .main-menu ul > 
   overflow: hidden;
   text-align: center;
   background-color: #efc94c;
+  background-image: url("assets/img/testimonial_1.jpg");
   color: #fff;
   margin-right: 30px;
   padding-top: 50px;
@@ -9113,3 +9117,11 @@ header.wide-header .main-menu ul > li > ul ul, header .header-3 .main-menu ul > 
 
 
 /*# sourceMappingURL=style.css.map */
+
+/* index page updates */
+
+#black-heading{
+  color: #202426 !important;
+}
+
+/* index page updates */
