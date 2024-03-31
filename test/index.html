@@ -674,10 +674,10 @@ Memories Created</span>
           </div>
           <div class="col-xl-8 mt-5 mt-xl-0">
             <div class="cta-subscribe-form">
-              <form action="#" class="row">
+              <form method="post" action="volunteer.php" novalidate="novalidate" class="row">
                 <div class="col-md-6 pr-5i">
                   <div class="single-input">
-                    <input type="text" placeholder="Enter your name" required />
+                    <input type="text" placeholder="Enter your name" name="name" required />
                     <span class="fal fa-user"></span>
                   </div>
                 </div>
@@ -686,6 +686,7 @@ Memories Created</span>
                     <input
                       type="text"
                       placeholder="Enter phone number"
+                      name="phone"
                       required
                     />
                     <span class="fal fa-phone"></span>
@@ -693,14 +694,14 @@ Memories Created</span>
                 </div>
                 <div class="col-md-4 pr-5i">
                   <div class="single-input">
-                    <input type="text" placeholder="Enter address" required />
+                    <input type="text" placeholder="Enter address" name="address" required />
                     <span class="far fa-map-marker-alt"></span>
                   </div>
                 </div>
                 <div class="col-md-4 pr-5i">
                   <div class="single-input">
-                    <input type="text" placeholder="Zip Code" />
-                    <span class="fal fa-map"></span>
+                    <input type="email" placeholder="Enter Email Address" name="email" />
+                    <span class="fal fa-envelope"></span>
                   </div>
                 </div>
                 <div class="col-md-4">
