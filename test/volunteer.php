@@ -49,15 +49,15 @@ if (!empty($errors)) {
     die();
 }
 
-$name = $_POST['username'];
+$name = $_POST['name'];
 $email = $_POST['email'];
-$message = $_POST['message'];
+$address = $_POST['address'];
 $from = $email;
 //$to = 'reservation@meridianbayresort.com';  // please change this email id
 $to = 'atulvc2001@gmail.com';
-$subject = $_POST['subject'];
+$subject = "I want to become a volunteer!";
 
-$body = "From: $name\n E-Mail: $email\n Message:\n $message";
+$body = "From: $name\n E-Mail: $email\n Message:\n $address";
 
 $headers = "From: " . $from;
 
