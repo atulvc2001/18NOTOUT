@@ -55,22 +55,10 @@
   </head>
 
   <body class="body-wrapper">
+    <!-- preloader New -->
     <!-- preloader -->
     <div id="preloader" class="preloader">
-      <div class="animation-preloader">
-        <div class="spinner"></div>
-        <div class="txt-loading">
-          <span data-text-preloader="1" class="letters-loading"> 1 </span>
-          <span data-text-preloader="8" class="letters-loading"> 8 </span>
-          <span data-text-preloader="N" class="letters-loading"> N </span>
-          <span data-text-preloader="O" class="letters-loading"> O </span>
-          <span data-text-preloader="T" class="letters-loading"> T </span>
-          <span data-text-preloader="O" class="letters-loading"> O </span>
-          <span data-text-preloader="U" class="letters-loading"> U </span>
-          <span data-text-preloader="T" class="letters-loading"> T </span>
-        </div>
-        <p class="text-center">Loading</p>
-      </div>
+      <div class="heart"></div>
       <div class="loader">
         <div class="row">
           <div class="col-3 loader-section section-left">
@@ -129,18 +117,24 @@
                 <div class="main-menu">
                   <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">about</a></li>
+                    <li>
+                      <a href="#">About</a>
+                      <ul class="sub-menu">
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="faq.html">Faq</a></li>
+                      </ul>
+                    </li>
                     <li>
                       <a href="#">Events</a>
                       <ul class="sub-menu">
                         <li><a href="events.html">Event Details</a></li>
                         <li><a href="cause-details.html">Past Events</a></li>
                         <li><a href="news.html">News</a></li>
-                        <li><a href="donation.html">Donation</a></li>
+                        <li><a href="volunteer.html">Become a Volunteer</a></li>
                       </ul>
                     </li>
-                    <li><a href="faq.html">Faq</a></li>
-                    <!-- <li><a href="team.html">Team</a></li> -->
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="contact.html">Contact</a></li>
                   </ul>
                 </div>
@@ -232,9 +226,11 @@
                     </h4>
                   </div>
                   <h1 class="fs-lg">Winning Games, Winning Hearts</h1>
-                  <a href="causes.html" class="theme-btn">View Causes</a>
+                  <a href="volunteer.html" class="theme-btn"
+                    >Become a volunteer</a
+                  >
                   <a href="donation.html" class="theme-btn no-fil"
-                    >Register Now</a
+                    >Contribute Now</a
                   >
                 </div>
               </div>
@@ -258,9 +254,11 @@
                   <h1 class="fs-lg">
                     Championing Inclusivity: Your Support, Their Strength
                   </h1>
-                  <a href="events.html" class="theme-btn">View Events</a>
+                  <a href="volunteer.html" class="theme-btn"
+                    >Become a volunteer</a
+                  >
                   <a href="donation.html" class="theme-btn no-fil"
-                    >Register Now</a
+                    >Contribute Now</a
                   >
                 </div>
               </div>
@@ -282,9 +280,11 @@
                     </h4>
                   </div>
                   <h1 class="fs-lg">We’re On A Mission To Change Our Lives</h1>
-                  <a href="causes.html" class="theme-btn">View Causes</a>
+                  <a href="volunteer.html" class="theme-btn"
+                    >Become a volunteer</a
+                  >
                   <a href="donation.html" class="theme-btn no-fil"
-                    >Register Now</a
+                    >Contribute Now</a
                   >
                 </div>
               </div>
@@ -308,10 +308,10 @@
               ></div>
               <div class="promo-details">
                 <span>S1E1 January 2024</span>
-                <h2><a href="donation.html">Bangalore Day Trip</a></h2>
+                <h2><a href="events-banglore.html">Bangalore Day Trip</a></h2>
                 <br />
 
-                <a href="#" class="theme-btn minimal-btn">Past Events</a>
+                <a href="events-banglore.html" class="theme-btn minimal-btn">Book Now</a>
               </div>
             </div>
           </div>
@@ -327,7 +327,7 @@
                 <span>S1E1 February 2024</span>
                 <h2><a href="donation.html">Goa Day Trip</a></h2>
 
-                <a href="#" class="theme-btn minimal-btn">Register Now</a>
+                <a href="#" class="theme-btn minimal-btn">Book Now</a>
               </div>
             </div>
           </div>
@@ -344,7 +344,7 @@
                 <h2><a href="donation.html">Munnar Day Trip</a></h2>
                 <br />
 
-                <a href="#" class="theme-btn minimal-btn">Register Now</a>
+                <a href="#" class="theme-btn minimal-btn">Book Now</a>
               </div>
             </div>
           </div>
@@ -376,12 +376,14 @@
                   class="img-fluid"
                 />
               </div>
-			<div class="our-experience text-white d-none d-sm-block">
-                            <h1>200</h1>
-                            <span>Hours of <br>
-Memories Created</span>                        
-                        </div>	
-          </div>
+              <div class="our-experience text-white d-none d-sm-block">
+                <h1>200</h1>
+                <span
+                  >Hours of <br />
+                  Memories Created</span
+                >
+              </div>
+            </div>
           </div>
           <div class="col-lg-6 about_left_content pr-lg-0 pl-lg-5">
             <div class="section-title">
@@ -669,15 +671,27 @@ Memories Created</span>
           <div class="col-xl-4 pr-xl-0">
             <div class="section-title">
               <span><i class="fal fa-heart"></i>Volunteer Today!</span>
-              <h1 id="black-heading">Cheer Beyond Limits: Become a volunteer today</h1>
+              <h1 id="black-heading">
+                Cheer Beyond Limits: Become a volunteer today
+              </h1>
             </div>
           </div>
           <div class="col-xl-8 mt-5 mt-xl-0">
             <div class="cta-subscribe-form">
-              <form method="post" action="volunteer.php" novalidate="novalidate" class="row">
+              <form
+                method="post"
+                action="volunteer.php"
+                novalidate="novalidate"
+                class="row"
+              >
                 <div class="col-md-6 pr-5i">
                   <div class="single-input">
-                    <input type="text" placeholder="Enter your name" name="name" required />
+                    <input
+                      type="text"
+                      placeholder="Enter your name"
+                      name="name"
+                      required
+                    />
                     <span class="fal fa-user"></span>
                   </div>
                 </div>
@@ -694,13 +708,22 @@ Memories Created</span>
                 </div>
                 <div class="col-md-4 pr-5i">
                   <div class="single-input">
-                    <input type="text" placeholder="Enter address" name="address" required />
+                    <input
+                      type="text"
+                      placeholder="Enter address"
+                      name="address"
+                      required
+                    />
                     <span class="far fa-map-marker-alt"></span>
                   </div>
                 </div>
                 <div class="col-md-4 pr-5i">
                   <div class="single-input">
-                    <input type="email" placeholder="Enter Email Address" name="email" />
+                    <input
+                      type="email"
+                      placeholder="Enter Email Address"
+                      name="email"
+                    />
                     <span class="fal fa-envelope"></span>
                   </div>
                 </div>
@@ -777,9 +800,7 @@ Memories Created</span>
             <div class="event-title">
               <a href="events.html" class="event-cat">Banglore</a>
               <h4>
-                <a href="event-details.html"
-                  >Embracing a fresh path</a
-                >
+                <a href="event-details.html">Embracing a fresh path</a>
               </h4>
             </div>
           </div>
@@ -947,8 +968,7 @@ Memories Created</span>
                 <div class="heading">
                   <h3>5000 Volunteers</h3>
                   <p>
-                    Many of us have no idea what it's like to be thirsty. We
-                    have plenty of water to drink even our toilets is clean!
+                    With 5000 volunteers on board, our team is as vast as the ocean and as supportive as a sturdy ship, ready to sail through any challenge to aid our disabled community.
                   </p>
                 </div>
               </div>
@@ -959,12 +979,11 @@ Memories Created</span>
                 <div class="heading">
                   <h3>Recognizing Unseen Challenges</h3>
                   <p>
-                    Many of us have no idea what it's like to be thirsty. We
-                    have plenty of water to drink even our toilets is clean!
+                    Empowerment requires uncovering unseen challenges and crafting innovative solutions to conquer them.
                   </p>
                 </div>
               </div>
-              <a href="causes.html" class="theme-btn">See Causes</a>
+              <a href="volunteer.html" class="theme-btn">Volunteer</a>
             </div>
           </div>
         </div>
@@ -980,10 +999,7 @@ Memories Created</span>
           <div class="col-lg-6 col-12 text-center text-lg-left">
             <div class="section-title">
               <span><i class="fal fa-heart"></i>A Journey</span>
-              <h1>
-                A Never-Ending Expedition: Enriching Our Treasure with Beautiful
-                Memories
-              </h1>
+              <h1>Enriching Our Treasure with Beautiful Memories</h1>
             </div>
           </div>
           <div
@@ -1006,8 +1022,58 @@ Memories Created</span>
       </div>
     </section>
 
-    <section class="blog-section section-padding">
+    <section class="funfact-wrap section-padding text-white mt-0">
       <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-fact">
+              <div class="icon">
+                <img src="assets/img/icon/1.png" alt="" />
+              </div>
+              <div class="numbers">
+                <div class="digit"><span>200</span></div>
+                <p>Hours Done</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-fact">
+              <div class="icon">
+                <img src="assets/img/icon/2.png" alt="" />
+              </div>
+              <div class="numbers">
+                <div class="digit"><span>150</span></div>
+                <p>Differently-abled Children</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-fact">
+              <div class="icon">
+                <img src="assets/img/icon/3.png" alt="" />
+              </div>
+              <div class="numbers">
+                <div class="digit"><span>99</span></div>
+                <p>Volunteers</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-fact">
+              <div class="icon">
+                <img src="assets/img/icon/4.png" alt="" />
+              </div>
+              <div class="numbers">
+                <div class="digit"><span>10</span></div>
+                <p>Get Regards</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog-section section-padding">
+      <div class="container" id="testimonials">
         <div class="row">
           <div class="col-12 text-center mb-50">
             <div class="section-title">
@@ -1018,15 +1084,16 @@ Memories Created</span>
         </div>
 
         <div class="row">
-          <div class="col-lg-6 pr-3 pl-3 pr-lg-5">
+          <!-- Main testimonials card -->
+          <!-- <div class="col-lg-6 pr-3 pl-3 pr-lg-5">
             <div class="blog-card">
               <div class="single-blog-card">
                 <div
                   class="featured-img bg-cover"
                   style="background-image: url('assets/img/blog/blog1.jpg')"
-                ></div>
-                <div class="post-content">
-                  <div class="post-meta d-flex">
+                  ></div>
+                  <div class="post-content">
+                    <div class="post-meta d-flex">
                     <div class="post-author">
                       <i class="fal fa-user"></i>By <a href="#">Rohini Sarma</a>
                     </div>
@@ -1036,10 +1103,10 @@ Memories Created</span>
                       <a href="news.html">Fundrise</a>
                     </div>
                   </div>
-
+                  
                   <h3>
-                    <a href="news-details.html"
-                      >Many of us have no idea what it's like</a
+                    <a href=""
+                    >Many of us have no idea what it's like</a
                     >
                   </h3>
                   <p>
@@ -1051,79 +1118,192 @@ Memories Created</span>
                 </div>
               </div>
             </div>
+          </div> -->
+          <!-- Main testimonials card end -->
+          <div class="col-lg-6">
+            <div class="blog-list-view">
+              <div class="single-blog-item">
+                <div
+                  class="post-date"
+                  style="
+                    background-image: url('assets/img/testimonials/testimonials-1.jpg');
+                  "
+                ></div>
+                <div class="post-content">
+                  <div class="post-meta">
+                    <div class="post-author">
+                      <!-- <i class="fal fa-user"></i> -->
+                      Parent of Vipin
+                    </div>
+                    <!-- <div class="post-cat">
+                      <i class="fal fa-tags"></i>
+                      <a href="donation.html">Charity</a>
+                      <a href="donation.html">Donate</a>
+                    </div> -->
+                  </div>
+
+                  <h3>
+                    <a href="">Padma Janardhan</a>
+                  </h3>
+                  <p>
+                    It was an amazing trip, enthusiastic volunteers, great
+                    arrangements at every destination and the trip created a lot
+                    of awareness of inclusion.
+                  </p>
+                </div>
+              </div>
+              <!-- ./single-blog-item -->
+              <div class="single-blog-item">
+                <div
+                  class="post-date"
+                  style="
+                    background-image: url('assets/img/testimonials/testimonials-2.jpg');
+                  "
+                ></div>
+                <div class="post-content">
+                  <div class="post-meta">
+                    <div class="post-author">
+                      <!-- <i class="fal fa-user"></i> -->
+                      Parent of Priyanka
+                    </div>
+                    <!-- <div class="post-cat">
+                      <i class="fal fa-tags"></i>
+                      <a href="donation.html">Charity</a>
+                      <a href="donation.html">Fundrise</a>
+                    </div> -->
+                  </div>
+
+                  <h3>
+                    <a href="">Padma Udhaykumar</a>
+                  </h3>
+                  <p>
+                    The S1E1 trip of 18 not out was awesome. The planning of everything including food, short eats, music in the bus, badges for the children and entertainment was excellent.
+                  </p>
+                </div>
+              </div>
+              <!-- ./single-blog-item -->
+              <div class="single-blog-item">
+                <!-- <div class="post-date"><span>15</span>Dec</div> -->
+                <div
+                  class="post-date"
+                  style="
+                    background-image: url('assets/img/testimonials/testimonials-3.jpg');
+                  "
+                ></div>
+                <div class="post-content">
+                  <div class="post-meta">
+                    <div class="post-author">
+                      <!-- <i class="fal fa-user"></i> -->
+                      Sibling of Archana
+                    </div>
+                    <!-- <div class="post-cat">
+                      <i class="fal fa-tags"></i>
+                      <a href="donation.html">Charity</a>
+                      <a href="donation.html">Fundrise</a>
+                    </div> -->
+                  </div>
+
+                  <h3>
+                    <a href="">Anuradha</a>
+                  </h3>
+                  <div>
+                    <p class="cutoff-text">
+                      Archana and I have not been able to do everything sisters get to do together, but we both sure love driving around the city while listening to music; that’s our shared time and space! Our day trip with 18NotOut gave us that and much more. For the first time, I could sit with my sister ( because I was not driving here) and see the joy and wonder on her face as she experienced something as simple as her first bus ride. We were both extremely comfortable and at ease, something we had never felt even when travelling with extended family.  I did not have to worry about how I would move her around in all these public spaces! I am happy to know Ligi, Sunil and everyone associated with 18NotOut. I see a community growing from this beautiful initiative and am looking forward to Archana and me being a part of it. I hope it inspires change.
+                    </p>
+                    <input class="expand-btn" type="checkbox">
+                  </div>
+                </div>
+              </div>
+              <!-- ./single-blog-item -->
+            </div>
           </div>
           <div class="col-lg-6">
             <div class="blog-list-view">
               <div class="single-blog-item">
-                <div class="post-date"><span>23</span>July</div>
+                <div
+                  class="post-date"
+                  style="
+                    background-image: url('assets/img/testimonials/testimonials-4.jpg');
+                  "
+                ></div>
+                <!-- <div class="post-date"><span>23</span>July</div> -->
                 <div class="post-content">
                   <div class="post-meta">
                     <div class="post-author">
-                      <i class="fal fa-user"></i>By
-                      <a href="#">Mohamed Yasin</a>
+                      <!-- <i class="fal fa-user"></i> -->
+                      Parent of Aman
                     </div>
-                    <div class="post-cat">
+                    <!-- <div class="post-cat">
                       <i class="fal fa-tags"></i>
-                      <a href="news.html">Charity</a>
-                      <a href="news.html">Donate</a>
-                    </div>
+                      <a href="donation.html">Charity</a>
+                      <a href="donation.html">Donate</a>
+                    </div> -->
                   </div>
 
                   <h3>
-                    <a href="news-details.html">A story about two sisters</a>
+                    <a href="">Khadeja K M</a>
                   </h3>
                   <p>
-                    Many of us have no idea what it's like to be thirsty. We
-                    have plenty of water to drink even.
+                    The trip organised by " 18 NOT OUT "was a wonderful experience for me and my son. He was a free bird with zero restrictions and enjoyed every aspect of the trip. It was a well organised trip  and created wonderful memories.
                   </p>
                 </div>
               </div>
               <!-- ./single-blog-item -->
               <div class="single-blog-item">
-                <div class="post-date"><span>27</span>Nov</div>
+                <div
+                  class="post-date"
+                  style="
+                    background-image: url('assets/img/testimonials/testimonials-5.jpg');
+                  "
+                ></div>
+                <!-- <div class="post-date"><span>27</span>Nov</div> -->
                 <div class="post-content">
                   <div class="post-meta">
                     <div class="post-author">
-                      <i class="fal fa-user"></i>By
-                      <a href="#">Sherin Joseph</a>
+                      <!-- <i class="fal fa-user"></i> -->
+                      Parent of Manvi
                     </div>
-                    <div class="post-cat">
+                    <!-- <div class="post-cat">
                       <i class="fal fa-tags"></i>
-                      <a href="news.html">Charity</a>
-                      <a href="news.html">Fundrise</a>
-                    </div>
+                      <a href="donation.html">Charity</a>
+                      <a href="donation.html">Fundrise</a>
+                    </div> -->
                   </div>
 
                   <h3>
-                    <a href="news-details.html">The New Volunteer Workforce</a>
+                    <a href="">Vinti Goyal</a>
                   </h3>
                   <p>
-                    Many of us have no idea what it's like to be thirsty. We
-                    have plenty of water to drink even.
+                    Thanks Ligi and Sunil for organising such a wonderful memorable trip, I am sure this is one of the first ever planned day trips for children like ours. I was overwhelmed with the love and dedication you both put into making this a success
                   </p>
                 </div>
               </div>
               <!-- ./single-blog-item -->
               <div class="single-blog-item">
-                <div class="post-date"><span>15</span>Dec</div>
+                <div
+                  class="post-date"
+                  style="
+                    background-image: url('assets/img/testimonials/testimonials-6.jpg');
+                  "
+                ></div>
+                <!-- <div class="post-date"><span>15</span>Dec</div> -->
                 <div class="post-content">
                   <div class="post-meta">
                     <div class="post-author">
-                      <i class="fal fa-user"></i>By <a href="#">Salman Ahmed</a>
+                      <!-- <i class="fal fa-user"></i> -->Parent of Anushka
                     </div>
-                    <div class="post-cat">
+                    <!-- <div class="post-cat">
                       <i class="fal fa-tags"></i>
-                      <a href="news.html">Charity</a>
-                      <a href="news.html">Fundrise</a>
-                    </div>
+                      <a href="donation.html">Charity</a>
+                      <a href="donation.html">Fundrise</a>
+                    </div> -->
                   </div>
 
                   <h3>
-                    <a href="news-details.html">Be Aware of Stereotyping</a>
+                    <a href="">Anindita Sarkar</a>
                   </h3>
                   <p>
-                    Forty million victims of modern slavery: That figure made
-                    headlines of water to drink even.
+                    I absolutely adore this team. They made the trip so memorable that Anushka is still immersed in the trip. This morning also she woke up and started talking to her father about the trip. Thank you so much for making this difference. We travel a lot, but this time, she traveled with a very different set of people who initially were outside her comfort zone. But she cherished every moment. Once again, thank you volunteers
                   </p>
                 </div>
               </div>
