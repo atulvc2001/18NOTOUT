@@ -54,7 +54,7 @@ $email = $_POST['email'];
 $address = $_POST['address'];
 $from = $email;
 //$to = 'reservation@meridianbayresort.com';  // please change this email id
-$to = 'atulvc2001@gmail.com';
+$to = 'Ligisunil@18notout.com';
 $subject = "I want to become a volunteer!";
 
 $body = "From: $name\n E-Mail: $email\n Message:\n $address";

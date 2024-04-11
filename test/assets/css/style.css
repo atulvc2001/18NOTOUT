@@ -5627,7 +5627,7 @@ header.wide-header .main-menu ul > li > ul ul, header .header-3 .main-menu ul > 
 }
 
 .cta-subscribe-form form .single-input input {
-  background-color: lightgrey;
+  background-color: #eeeeee;
   height: 60px;
   border: 0px;
   width: 100%;
@@ -7331,7 +7331,8 @@ header.wide-header .main-menu ul > li > ul ul, header .header-3 .main-menu ul > 
   overflow: hidden;
   margin-top: 30px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #eee;
+  /* border: #000 solid 1px; */
+  /* border-bottom: 1px solid #eee; */
 }
 
 .blog-list-view .single-blog-item:last-child {
@@ -9185,6 +9186,72 @@ header.wide-header .main-menu ul > li > ul ul, header .header-3 .main-menu ul > 
 }
 
 /* end cause css */
+
+/* start Video center */
+.video-center{
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vid-btn{
+  background-color: transparent !important;
+  position:absolute;
+}
+
+.vid-transparent{
+  background-color: #fffdfd6e !important;
+}
+/* end Video center */
+
+/* testimonials cutoff box start */
+
+.cutoff-text {
+  --max-lines: 2;
+  --line-height: 1.625rem;
+  overflow: hidden;
+  height: calc(var(--max-lines) * var(--line-height));
+  position: relative;
+}
+
+.cutoff-text::before {
+  content: "";
+  position: absolute;
+  height: var(--line-height);
+  width: 100%;
+  bottom: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, var(--white));
+}
+
+.expand-btn {
+  /* padding: 10px !important; */
+  appearance: none;
+  cursor: pointer;
+}
+
+.expand-btn:hover {
+  /* background-color: #d4d4d4; */
+}
+
+.expand-btn::before {
+  content: "read more";
+  font-size: small;
+  color: #727475;
+}
+
+.expand-btn:checked::before {
+  content: "read less"
+}
+
+.expand-btn:checked ~ .cutoff-text {
+  /* max-height: none; */
+  overflow: visible;
+}
+
+
+/* testimonials cutoff box end*/
 
   @keyframes backdiv {
     50% {
