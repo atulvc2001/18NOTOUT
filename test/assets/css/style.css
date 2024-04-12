@@ -9205,6 +9205,12 @@ header.wide-header .main-menu ul > li > ul ul, header .header-3 .main-menu ul > 
 }
 /* end Video center */
 
+/* start testimonials bg */
+.post-date.testimonials-bg {
+  background-color: white !important;
+}
+/* end testimonials bg */
+
 /* testimonials cutoff box start */
 
 .cutoff-text {
