@@ -9217,47 +9217,68 @@ header.wide-header .main-menu ul > li > ul ul, header .header-3 .main-menu ul > 
   --max-lines: 2;
   --line-height: 1.625rem;
   overflow: hidden;
-  height: calc(var(--max-lines) * var(--line-height));
   position: relative;
 }
 
-.cutoff-text::before {
+.cutoff-text p {
+  margin: 0;
+  padding: 0;
+  height: calc(var(--max-lines) * var(--line-height));
+  overflow: hidden;
+}
+
+.cutoff-text p::after {
   content: "";
   position: absolute;
   height: var(--line-height);
   width: 100%;
   bottom: 0;
+  left: 0;
   pointer-events: none;
-  background: linear-gradient(to bottom, transparent, var(--white));
+  background: linear-gradient(to bottom, transparent, #ffffff);
 }
 
 .expand-btn {
-  /* padding: 10px !important; */
   appearance: none;
   cursor: pointer;
+  margin-top: 10px; /* Adjust as needed */
 }
 
 .expand-btn:hover {
-  /* background-color: #d4d4d4; */
+  /* Add hover styles if needed */
 }
 
-.expand-btn::before {
+/* .expand-btn::before {
   content: "read more";
   font-size: small;
   color: #727475;
+} */
+
+.expand-btn:checked ~ .cutoff-text p {
+  height: auto;
+}
+
+.expand-btn:checked ~ .cutoff-text p::after {
+  display: none;
 }
 
 .expand-btn:checked::before {
-  content: "read less"
+  content: "read less";
 }
 
-.expand-btn:checked ~ .cutoff-text {
-  /* max-height: none; */
-  overflow: visible;
-}
 
 
 /* testimonials cutoff box end*/
+
+/* about us text center  */
+
+.text-center > h4{
+  text-align: center;
+  padding-top: 14px;
+}
+
+/* about us text center  */
+
 
   @keyframes backdiv {
     50% {
