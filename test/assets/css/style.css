@@ -238,7 +238,7 @@ h4 {
 
 h5 {
   font-size: 1.125rem;
-  line-height: 1.88rem;
+  line-height: 1.45rem;
 }
 
 h6 {
@@ -2596,6 +2596,7 @@ header.header-box-style .logo, header.header-1 .logo {
   padding-right: 37px;
   height: 7.8em;
   background-color: #fff;
+  border-radius: 10px 0px 0px 10px;
 }
 
 @media (max-width: 1199px) {
@@ -2630,6 +2631,7 @@ header.header-box-style .logo, header.header-1 .logo {
 
 header.header-box-style .box-wrap, header.header-1 .box-wrap {
   background: #f9f9f9;
+  border-bottom-right-radius: 10px;
 }
 
 header.header-box-style .box-wrap .main-menu ul, header.header-1 .box-wrap .main-menu ul {
@@ -2726,11 +2728,11 @@ header.header-box-style .box-wrap .main-menu ul > li.mega-menu > .sub-menu > li 
 header.header-box-style .box-wrap .main-menu ul > li > a, header.header-1 .box-wrap .main-menu ul > li > a {
   display: inline-block;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: capitalize;
   color: #727475;
   line-height: 1;
-  padding: 29px 25px;
+  padding: 28px 25px;
   overflow: hidden;
 }
 
@@ -3758,6 +3760,10 @@ header.wide-header .main-menu ul > li > ul ul, header .header-3 .main-menu ul > 
 }
 
 .section-padding {
+  padding: 120px 0px;
+}
+
+.section-padding-donation {
   padding: 120px 0px;
 }
 
@@ -6463,15 +6469,15 @@ header.wide-header .main-menu ul > li > ul ul, header .header-3 .main-menu ul > 
 }
 
 .event-details-sidebar .single-event-sidebar .special-guest-list .single-guest-info:nth-child(2) span {
-  color: #00aa55;
+  color: #7c7c7c;
 }
 
 .event-details-sidebar .single-event-sidebar .special-guest-list .single-guest-info:nth-child(3n) span {
-  color: #efc94c;
+  color: #7c7c7c;
 }
 
 .event-details-sidebar .single-event-sidebar .special-guest-list .single-guest-info:nth-child(4n) span {
-  color: #9238a4;
+  color: #7c7c7c;
 }
 
 .event-details-sidebar .single-event-sidebar .special-guest-list .single-guest-info .profile-img {
@@ -6487,7 +6493,7 @@ header.wide-header .main-menu ul > li > ul ul, header .header-3 .main-menu ul > 
 
 .event-details-sidebar .single-event-sidebar .special-guest-list .single-guest-info span {
   font-weight: 700;
-  color: #d55342;
+  color: #7c7c7c;
 }
 
 .event-map-wrap iframe {
@@ -9269,6 +9275,34 @@ header.wide-header .main-menu ul > li > ul ul, header .header-3 .main-menu ul > 
 
 
 /* testimonials cutoff box end*/
+
+/* QR code start */
+.qrcode-center{
+  justify-content: center;
+  display: flex;
+}
+/* QR code end */
+
+/* about page well wishers start */
+
+.special-guest-list .guest-bio span {
+  font-size: 0.9rem;
+  /* line-height: 1rem; */
+}
+
+.special-guest-list .guest-bio .span-box {
+  display: flex;
+  width: 62%;
+  line-height: 1.2rem;
+}
+
+/* about page well wishers end */
+
+/* Donation page start */
+.hidden {
+  display: none;
+}
+/* Donation page end */
 
 /* about us text center  */
 
