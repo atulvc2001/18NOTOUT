@@ -2,18 +2,18 @@
 $errors = array();
 
 // Check if name has been entered
-if (!isset($_POST['username'])) {
-    $errors['username'] = 'Please enter your name';
+if (!isset($_POST['firstName'])) {
+    $errors['firstName'] = 'Please enter your name';
 }
 
 // Check if email has been entered and is valid
-if (!isset($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+if (!isset($_POST['email'])) {
     $errors['email'] = 'Please enter a valid email address';
 }
 
 
 // Check if phone number has been entered and is valid
-if (!isset($_POST['phone']) || empty($_POST['phone'])) {
+if (!isset($_POST['phone'])) {
     $errors['phone'] = 'Please enter a phone number';
 } else {
     // Optionally, you can add additional validation for the phone number format
@@ -30,9 +30,9 @@ if (!isset($_POST['phone']) || empty($_POST['phone'])) {
 // }
 
 // Check if message has been received
-if (!isset($_POST['message'])) {
-    $errors['message'] = 'Please enter your message';
-}
+// if (!isset($_POST['address'])) {
+//     $errors['address'] = 'Please enter your address';
+// }
 
 $errorOutput = '';
 
@@ -54,17 +54,19 @@ if (!empty($errors)) {
     die();
 }
 
-$name = $_POST['username'];
+$fname = $_POST['firstName'];
+$lname = $_POST['lastName'];
+$name = $fname . " " . $lname;
 $email = $_POST['email'];
-// $address = $_POST['address'];
-$message = $_POST['message'];
+$address = $_POST['address'];
+// $message = $_POST['message'];
 $from = $email;
-//$to = 'reservation@meridianbayresort.com';  // please change this email id
-$to = 'ligisbaby@18notout.com';
-// $to = 'atulvc2001@gmail.com';
-$subject = $_POST['subject'];
+// please change this email id
+// $to = 'ligisbaby@18notout.com';
+$to = 'atulvc2001@gmail.com';
+$subject = "I want to contribute my talent";
 
-$body = "From: $name\nE-Mail: $email\n\nMessage:\n$message";
+$body = "From: $name\nE-Mail: $email\n\nAddress:\n$address";
 
 $headers = "From: " . $from;
 

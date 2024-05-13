@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Financial
     financialButton.addEventListener('click', () => {
+        financialSection.classList.remove('hidden');
         talentSection.classList.add('hidden');
         timeSection.classList.add('hidden');
-        financialSection.classList.remove('hidden');
     });
     
     // Time

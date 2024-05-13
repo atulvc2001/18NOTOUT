@@ -9281,6 +9281,12 @@ header.wide-header .main-menu ul > li > ul ul, header .header-3 .main-menu ul > 
   justify-content: center;
   display: flex;
 }
+
+.qrcode-center > div{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 /* QR code end */
 
 /* about page well wishers start */
