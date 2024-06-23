@@ -1,0 +1,17 @@
+[12-May-2024 16:17:37 UTC] PHP Warning:  Undefined array key "name" in /home/notout21/public_html/test/mail.php on line 5
+[12-May-2024 16:17:37 UTC] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home/notout21/public_html/test/mail.php on line 5
+[12-May-2024 16:17:52 UTC] PHP Warning:  Undefined array key "name" in /home/notout21/public_html/test/mail.php on line 5
+[12-May-2024 16:17:52 UTC] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home/notout21/public_html/test/mail.php on line 5
+[12-May-2024 16:19:16 UTC] PHP Warning:  Undefined array key "name" in /home/notout21/public_html/test/mail.php on line 5
+[12-May-2024 16:19:16 UTC] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home/notout21/public_html/test/mail.php on line 5
+[12-May-2024 16:53:38 UTC] PHP Warning:  Undefined array key "name" in /home/notout21/public_html/test/contact-form.php on line 57
+[12-May-2024 16:53:38 UTC] PHP Warning:  Undefined variable $address in /home/notout21/public_html/test/contact-form.php on line 67
+[12-May-2024 16:54:37 UTC] PHP Warning:  Undefined array key "name" in /home/notout21/public_html/test/contact-form.php on line 57
+[13-May-2024 07:20:29 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/notout21/public_html/test/contribute-time.php:59
+Stack trace:
+#0 {main}
+  thrown in /home/notout21/public_html/test/contribute-time.php on line 59
+[13-May-2024 07:22:10 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/notout21/public_html/test/contribute-time.php:59
+Stack trace:
+#0 {main}
+  thrown in /home/notout21/public_html/test/contribute-time.php on line 59

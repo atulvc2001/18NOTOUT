@@ -2,7 +2,7 @@
 $errors = array();
 
 // Check if name has been entered
-if (!isset($_POST['name'])) {
+if (!isset($_POST['username'])) {
     $errors['name'] = 'Please enter your name';
 }
 
@@ -11,22 +11,9 @@ if (!isset($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAI
     $errors['email'] = 'Please enter a valid email address';
 }
 
-
-// Check if phone number has been entered and is valid
-if (!isset($_POST['phone']) || empty($_POST['phone'])) {
-    $errors['phone'] = 'Please enter a phone number';
-} else {
-    // Optionally, you can add additional validation for the phone number format
-    $phone = $_POST['phone'];
-    // Example regular expression to validate a phone number (adjust as needed)
-    if (!preg_match('/^\d{10}$/', $phone)) {
-        $errors['phone'] = 'Please enter a valid 10-digit phone number';
-    }
-}
-
 //Check if message has been entered
-if (!isset($_POST['address'])) {
-    $errors['address'] = 'Please enter your adsress';
+if (!isset($_POST['message'])) {
+    $errors['message'] = 'Please enter your message';
 }
 
 $errorOutput = '';
@@ -49,16 +36,15 @@ if (!empty($errors)) {
     die();
 }
 
-$name = $_POST['name'];
+$name = $_POST['username'];
 $email = $_POST['email'];
-$address = $_POST['address'];
+$message = $_POST['message'];
 $from = $email;
 //$to = 'reservation@meridianbayresort.com';  // please change this email id
-// $to = 'Ligisunil@18notout.com';
 $to = 'ligisunil@18notout.com';
-$subject = "I want to become a volunteer!";
+$subject = $_POST['subject'];
 
-$body = "From: $name\n E-Mail: $email\n Message:\n $address";
+$body = "From: $name\n E-Mail: $email\n Message:\n $message";
 
 $headers = "From: " . $from;
 
